@@ -1,0 +1,76 @@
+=== Woo Wide Pay ===
+Contributors: widepay, gabrielpasche
+Tags: ecommerce, woocommerce, widepay, pagamento, pagamentos, payment
+Requires at least: 4.0
+Requires PHP: 5.2.4
+Tested up to: 5.5
+Stable tag: 1.0.13
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Plugin de integração Wide Pay e WooCommerce. Gere boletos com ótimas tarifas pela API Wide Pay
+
+== Description ==
+
+#  Módulo WooCommerce para Wide Pay
+Módulo desenvolvido para integração entre o WooCommerce e Wide Pay. Com o módulo é possível gerar boletos para pagamento e liquidação automática pelo Wide Pay após o recebimento.
+
+* **Versão atual:** 1.0.11
+* **Versão WooCommerce Testada:** 2.6.x^
+* **Acesso Wide Pay**: [Abrir Link](https://www.widepay.com/acessar)
+* **API Wide Pay**: [Abrir Link](https://widepay.github.io/api/index.html)
+* **Módulos Wide Pay**: [Abrir Link](https://widepay.github.io/api/modulos.html)
+
+# Configuração do Plugin
+Lembre-se que para esta etapa, o plugin deve estar instalado e ativado no sistema Wordpress.
+
+A configuração do Plugin Wide Pay pode ser encontrada no menu: Wordpress -> Plugins -> Woo Wide Pay -> Configurações. Ou Wordpress -> WooCommerce -> Settings -> Checkout -> Wide Pay.
+
+Para configuração do Wide Pay é preciso que pelo menos os 5 campos obrigatórios sejam preenchidos. Segue a lista dos campos e descrição.
+
+*   "Title" **Sim**|Nome do método de pagamento que será exibido no checkout|
+*   "Descrição" **Sim**|Descrição do método de pagamento que será exibido no checkout|
+*   "Item na fatura" **Sim**|Descrição do item presente na fatura Wide Pay|
+*   "ID da Carteira Wide Pay" **Sim** |Preencha este campo com o ID da carteira que deseja receber os pagamentos do sistema. O ID de sua carteira estará presente neste link: https://www.widepay.com/conta/configuracoes/carteiras|
+*   "Token da Carteira Wide Pay" **Sim**|Preencha com o token referente a sua carteira escolhida no campo acima. Clique no botão: "Integrações" na página do Wide Pay, será exibido o Token|
+*   "Taxa de Variação" Não|O valor final da fatura será recalculado de acordo com este campo.|
+*   "Tipo da Taxa de Variação" Não|O campo acima "Taxa de Variação" será aplicado de acordo com este campo.|
+*   "Acréscimo de Dias no Vencimento" Não|Qual a quantidade de dias para o vencimento após a data da geração da fatura.|
+*   "Configuração de Multa" Não|Configuração de multa após o vencimento, máximo 20|
+*   "Configuração de Juros" Não|Configuração de juros após o vencimento, máximo 20|
+
+== Installation ==
+
+# Instalação Plugin
+
+1. Para a instalação do plugin realize o download
+2. Após o download concluído, acesse o menu de plugins do WordPress, clique em Adicionar. Selecione o arquivo *.zip*. Clique em Upload.
+3. Clique em Instalar.
+4. Clique em Ativar.
+
+== Changelog ==
+
+= 1.0.12 =
+*Atualizado em - 19 Agosto 2020*
+
+* Enviando e-mail pelo servidor Wide Pay
+
+= 1.0.11 =
+*Atualizado em - 14 Agosto 2020*
+
+* Enviando e-mail para cliente com informações de pagamento
+
+= 1.0.10 =
+*Atualizado em - 23 Outubro 2019*
+
+* Adicionando possíbilidade de escolher Cartão e/ou Boleto nas configurações do plugin.
+
+= 1.0.9 =
+*Atualizado em - 02 Julho 2019*
+
+* Adicionando possíbilidade de colocar o número da fatura na descrição do WidePay.
+
+= 1.0.8 =
+*Atualizado em - 19 Junho 2019*
+
+* Habilitado função de Cartão de Crédito como meio de pagamento.
